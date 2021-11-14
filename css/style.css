@@ -9,3 +9,30 @@
 html, body {
     font-family: sans-serif;
 }
+
+/* Utility Classes */
+.container {
+    margin: 0 auto;
+    margin-top: 150px;
+    max-width: 1200px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #000;
+
+    border-width: 50px;
+    border-style: solid;
+    border-color: #f00 #ff0 #f00 #ff0;
+
+    transition: all 0.2s;
+}
+
+.circle:hover {
+    transform: rotate(90deg);
+}
